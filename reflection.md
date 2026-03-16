@@ -47,11 +47,19 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit reruns the entire script every time the user interacts with the app. This means the program starts executing from the top again on each interaction.
+
+Session state is used to store information. For example, in the guessing game the secret number and previous hints must stay the same even when the page reruns. Without session state, those values would reset every time the user interacts with the app.
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+  One habit I want to reuse is using automated tests with pytest to verify code changes. Writing tests helped confirm that my fixes actually worked instead of relying only on manual testing.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+Next time I work with AI on a coding task, I will verify the suggestions more carefully instead of assuming they are correct. In this project I learned that AI suggestions can be helpful but sometimes incomplete or incorrect, so reviewing the logic and testing the results is important.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+This project showed me that AI can be a useful assistant for debugging and explaining code, but it should not be trusted blindly. Developers still need to understand the code, test it, and verify that the suggested fixes actually solve the problem.
