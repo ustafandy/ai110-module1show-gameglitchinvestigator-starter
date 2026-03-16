@@ -8,22 +8,38 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
----
+- "There were no hints when I run the game first time." 
+- "The range in the easy mode says from 1 to 20 while the secret number was 93"
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+
+- I used Claude inside VSCode, and Chat GPT on my browser. Chat GPT is my all time favorite AI
+
+- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result). 
+
+- The AI suggested that I change variables to fix the out of range problems and I confirmed the edits. Then after rerunnning the game. The range problem was fixed and that's how I confirmed it was true suggestion. 
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+
+- The suggested solution for the hint problem was not correct. The test case Claude wrote for me to add in the `test_game_logic.py` file was giving errors and Chat GPT fixed it for me. Furthermore, the fix I implemented using Claude still gives a misleading information in the game. It only fixed part of the problem. 
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+
+- By rerunning the game and trying that specific problem. 
+
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
+
+- The 'Easy' range test. I changed it midplaying to make sure the secret number will be in range from 1 to 20 and it worked.
+
 - Did AI help you design or understand any tests? How?
+
+- Yes it helped me design the fix for the test easy range. It explicitly showed me that the problem was in the variables because the original code reset the range 1 to 100 with every new game.
 
 ---
 
